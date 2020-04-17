@@ -35,11 +35,7 @@ public class peminjamanbuku {
     harga[i] = 4000;} 
     i++; 
     }while (i<jumlah);
-    System.out.println();
-    System.out.println ("-------------------------------");
-    System.out.println ("Nama            : "+nama);
-    System.out.println ("NIM             : "+nim);
-    System.out.println ("Jurusan         : "+jurusan);
+    show(nama, nim, jurusan);
     System.out.println ("-------------------------------");
     System.out.println ("       Buku Yang Dipinjam      ");
     System.out.println ("-------------------------------");
@@ -52,5 +48,12 @@ public class peminjamanbuku {
     while (i<jumlah);
     System.out.println ("-------------------------------");
     System.out.println ("Total Biaya Pinjam "+total);
-    }  
+    } 
+    static void show(String nama,String nim,String jurusan){
+    System.out.println();
+    System.out.println ("-------------------------------");
+    System.out.println ("Nama            : "+nama);
+    System.out.println ("NIM             : "+nim);
+    System.out.println ("Jurusan         : "+jurusan);
+    } 
 }
